@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="id.css">
+</head>
+
+<body>
+    <h3>Employee ID Card Form</h3>
+    <form novalidate>
+        <label id="imag">Upload Image</label>
+        
+        <div class="actualform">
+                <input type='file' onchange="readURL(this);" />
+                <img id="blah" src="http://placehold.it/180" alt="your image" />
+            
+            <div class="inputform">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Enter first name" required>
+            <span class="span-for-errors" id="errForFirstName">*(Please enter your preferred name as first name)</span>
+        </div>
+        <div class="inputform margin-top=15px ">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter Full name" required>
+            <span class="span-for-errors" id="errForFullName">*(Please enter your full name)</span>
+      </div>
+      <div class="inputform">
+            <label for="Designation">Designation</label>
+            <div class="dropdown">
+            <select id="Designation width=300px" >
+                <option value ="1">B.E</option>
+                <option value ="2">B.Tech</option>
+                <option value ="3">M.E</option>
+                <option value ="4">M.Tech</option>
+                <option value ="5">MBA</option>
+                <option value ="6">BCA</option>
+            </select>
+            </div>
+            <span class="span-for-errors" id="errForDesignation">*(Please choose from the category)</span>
+        </div>
+        
+        <div class="inputform">
+                <label for="employeecode">Employee Code</label>
+                <input type="text" id="employeecode" placeholder="Enter Employee Code" required>
+                <span class="span-for-errors" id="errForEmpCode" >*(Please enter proper code)</span>
+         </div>
+         <div class="inputform">
+                <label for="bloodgrp">BloodGroup</label>
+                <input type="text" id="bloodgrp" placeholder="Enter blood group" required>
+                <span class="span-for-errors" id="errForBloodgrp">*(Please enter proper group)</span>
+         </div>
+         <div class="inputform">
+                <label for="Issue">Reasons For Issue</label>
+                <div class="dropdown">
+                        <select id="Issue width=300px" >
+                            <option value ="1">New Employee</option>
+                            <option value ="2">Lost</option>
+                            <option value ="3">Defaced</option>
+                            <option value ="4">Conversion</option>
+                            <option value ="5">Designation change</option>
+                            
+                        </select>
+                        </div>
+                <span class="span-for-errors" id="errForReasons">*(Please enter proper group)</span>
+         </div>
+         <div class="inputform">
+                <label for="dateemp">Date of Employment</label>
+                <input type="date" id="dateemp" placeholder="Enter Date" required>
+                <span class="span-for-errors" id="errForDate">*(Please enter date)</span>
+         </div>
+         <div class="inputform">
+                <label for="email">E-mail Id(Virtusa)</label>
+                <input type="text" id="email" placeholder="Enter mailID" required>
+                <span class="span-for-errors" id="errForEmail">*(Please enter valid emailId)</span>
+         </div>
+         <div class="inputform">
+                <label for="mobile">Mobile Number</label>
+                <input type="text" id="mobile" placeholder="Enter Mobile No" required>
+                <span class="span-for-errors" id="errForMobile">*(Please enter valid mobile no)</span>
+         </div>
+         <div class="inputform">
+                <label for="emergency">Emergency contact number</label>
+                <input type="text" id="emergency" placeholder="Enter Emergency No" required>
+                <span class="span-for-errors" id="errForEmergency">*(Please enter valid mobile no)</span>
+         </div>
+        <button type="button" onclick="addDetails()">Add Details</button>
+    </div>
+    </form>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="app.js "></script>
+</body>
+
+</html>
